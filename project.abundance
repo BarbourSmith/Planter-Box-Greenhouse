@@ -1,16 +1,53 @@
 {
     "atomType": "Molecule",
-    "name": "Planter Box Greenhouse",
+    "name": "Planter-Box-Greenhouse",
     "x": 0,
     "y": 0,
     "uniqueID": 1742603270998,
     "ioValues": [],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": 1742603280174,
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": 1742603283087
+                }
+            ],
+            "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.7061442564559216,
+            "y": 0.6323119777158774,
+            "uniqueID": 1742603283087,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Creates a new circle."
+        }
+    ],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1742603283087,
+            "ap2ID": 1742603280174
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
