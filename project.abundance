@@ -1227,8 +1227,8 @@
         {
             "atomType": "CutLayout",
             "name": "Cut Layout",
-            "x": 0.8908730158730158,
-            "y": 0.8050139275766017,
+            "x": 0.8121693121693121,
+            "y": 0.8356545961002785,
             "uniqueID": 1742850380372,
             "ioValues": [
                 {
@@ -1256,75 +1256,67 @@
             "placements": [
                 {
                     "translate": {
-                        "x": 203.10000610351562,
-                        "y": -216.97662353515625
-                    },
-                    "id": 8,
-                    "rotate": 0
-                },
-                {
-                    "translate": {
-                        "x": 253.10000605742187,
-                        "y": -109.31706233339844
-                    },
-                    "id": 4,
-                    "rotate": 0
-                },
-                {
-                    "translate": {
-                        "x": -127.13918311875,
-                        "y": 229.21271117569276
-                    },
-                    "id": 1,
-                    "rotate": 0
-                },
-                {
-                    "translate": {
-                        "x": -19.325244243749978,
-                        "y": 257.3254232775757
-                    },
-                    "id": 6,
-                    "rotate": 0
-                },
-                {
-                    "translate": {
-                        "x": 253.1000060875,
-                        "y": 546.5223987792847
-                    },
-                    "id": 2,
-                    "rotate": 0
-                },
-                {
-                    "translate": {
-                        "x": 203.1000060875,
-                        "y": 582.7223985792847
+                        "x": 363.6602478027344,
+                        "y": 203.10000610351562
                     },
                     "id": 7,
-                    "rotate": 0
+                    "rotate": 90
                 },
                 {
                     "translate": {
-                        "x": 588.2938963875,
-                        "y": 258.4980990561218
+                        "x": 388.5735945234375,
+                        "y": 311.7193943985443
+                    },
+                    "id": 1,
+                    "rotate": 180
+                },
+                {
+                    "translate": {
+                        "x": -15.987616143750017,
+                        "y": 167.43602247757568
                     },
                     "id": 5,
                     "rotate": 0
                 },
                 {
                     "translate": {
-                        "x": 673.6414610874999,
-                        "y": 313.61206265612185
+                        "x": 3.0999998561218263,
+                        "y": 232.3751230125
                     },
                     "id": 0,
+                    "rotate": 270
+                },
+                {
+                    "translate": {
+                        "x": 165.60000609648438,
+                        "y": 274.94266506250005
+                    },
+                    "id": 3,
                     "rotate": 0
                 },
                 {
                     "translate": {
-                        "x": 253.10000610683593,
-                        "y": 271.73158649140623
+                        "x": 350.44392622071535,
+                        "y": 203.1000060875
                     },
-                    "id": 3,
+                    "id": 6,
+                    "rotate": 90
+                },
+                {
+                    "translate": {
+                        "x": 165.6000060875,
+                        "y": 631.7102689792847
+                    },
+                    "id": 2,
                     "rotate": 0
+                },
+                {
+                    "translate": {
+                        "x": 3.0999998561218263,
+                        "y": 477.9102735125
+                    },
+                    "id": 4,
+                    "rotate": 270
                 }
             ]
         },
@@ -2019,6 +2011,36 @@
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+        },
+        {
+            "atomType": "Export",
+            "name": "Export",
+            "x": 0.9358465608465609,
+            "y": 0.7715877437325905,
+            "uniqueID": 1742852540068,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1742850380372
+                },
+                {
+                    "name": "Resolution (dpi)",
+                    "ioValue": 96
+                },
+                {
+                    "name": "Part Name",
+                    "ioValue": "Planter-Box-Greenhouse"
+                },
+                {
+                    "name": "File Type",
+                    "ioValue": "SVG"
+                }
+            ],
+            "description": "Export Atom, let's you choose a type of file to Export.",
+            "type": null,
+            "resolution": 96,
+            "importIndex": 0,
+            "fileName": null
         }
     ],
     "allConnectors": [
@@ -2077,6 +2099,13 @@
             "ap2Primary": false,
             "ap1ID": 1742830615041,
             "ap2ID": 1742850812780
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": 1742850380372,
+            "ap2ID": 1742852540068
         },
         {
             "ap1Name": "Geometry",
