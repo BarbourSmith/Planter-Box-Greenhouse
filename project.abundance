@@ -1349,7 +1349,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1742850444572,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1742852307837
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -1365,8 +1370,8 @@
                 {
                     "atomType": "Intersection",
                     "name": "Intersection",
-                    "x": 0.41137566137566134,
-                    "y": 0.1532033426183844,
+                    "x": 0.408068783068783,
+                    "y": 0.15041782729805014,
                     "uniqueID": 1742850444712,
                     "ioValues": [
                         {
@@ -1383,8 +1388,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.2526455026455027,
-                    "y": 0.1894150417827298,
+                    "x": 0.2599206349206349,
+                    "y": 0.24233983286908078,
                     "uniqueID": 1742850444170,
                     "ioValues": [
                         {
@@ -1409,8 +1414,8 @@
                 {
                     "atomType": "Intersection",
                     "name": "Intersection",
-                    "x": 0.4424603174603175,
-                    "y": 0.39275766016713093,
+                    "x": 0.44378306878306883,
+                    "y": 0.3983286908077995,
                     "uniqueID": 1742850444728,
                     "ioValues": [
                         {
@@ -1437,7 +1442,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 350
+                            "ioValue": 325
                         },
                         {
                             "name": "yDist",
@@ -1471,8 +1476,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.292989417989418,
-                    "y": 0.8857938718662952,
+                    "x": 0.291005291005291,
+                    "y": 0.8997214484679666,
                     "uniqueID": 1742850444608,
                     "ioValues": [
                         {
@@ -1481,7 +1486,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": -450
+                            "ioValue": -325
                         },
                         {
                             "name": "yDist",
@@ -1552,7 +1557,7 @@
                 },
                 {
                     "atomType": "Tag",
-                    "name": ",cutLayout",
+                    "name": "cutLayout,",
                     "x": 0.5978835978835979,
                     "y": 0.3203342618384401,
                     "uniqueID": 1742850444253,
@@ -1564,8 +1569,8 @@
                     ],
                     "description": "Tags geometry so that it can be extracted later.",
                     "tags": [
-                        "",
-                        "cutLayout"
+                        "cutLayout",
+                        ""
                     ],
                     "cutTag": true
                 },
@@ -1591,8 +1596,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.2599206349206349,
-                    "y": 0.5097493036211699,
+                    "x": 0.2585978835978836,
+                    "y": 0.48467966573816157,
                     "uniqueID": 1742850598940,
                     "ioValues": [
                         {
@@ -1791,6 +1796,32 @@
                     ],
                     "fileTypeVersion": 1,
                     "compiledBom": []
+                },
+                {
+                    "atomType": "Assembly",
+                    "name": "Assembly",
+                    "x": 0.8174603174603176,
+                    "y": 0.5793871866295265,
+                    "uniqueID": 1742852307837,
+                    "ioValues": [
+                        {
+                            "name": "Shape 1",
+                            "ioValue": 1742850444257
+                        },
+                        {
+                            "name": "Shape 2",
+                            "ioValue": 1742850444289
+                        },
+                        {
+                            "name": "Shape 3",
+                            "ioValue": 1742850444253
+                        },
+                        {
+                            "name": "Shape 4",
+                            "ioValue": 1742850444424
+                        }
+                    ],
+                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
                 }
             ],
             "allConnectors": [
@@ -1873,6 +1904,34 @@
                 },
                 {
                     "ap1Name": "geometry",
+                    "ap2Name": "Shape 1",
+                    "ap2Primary": false,
+                    "ap1ID": 1742850444257,
+                    "ap2ID": 1742852307837
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 2",
+                    "ap2Primary": false,
+                    "ap1ID": 1742850444289,
+                    "ap2ID": 1742852307837
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 3",
+                    "ap2Primary": false,
+                    "ap1ID": 1742850444253,
+                    "ap2ID": 1742852307837
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 4",
+                    "ap2Primary": false,
+                    "ap1ID": 1742850444424,
+                    "ap2ID": 1742852307837
+                },
+                {
+                    "ap1Name": "geometry",
                     "ap2Name": "geometry2",
                     "ap2Primary": false,
                     "ap1ID": 1742850598940,
@@ -1905,6 +1964,13 @@
                     "ap2Primary": true,
                     "ap1ID": 1742850615723,
                     "ap2ID": 1742850444608
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1742852307837,
+                    "ap2ID": 1742850444572
                 }
             ],
             "fileTypeVersion": 1,
