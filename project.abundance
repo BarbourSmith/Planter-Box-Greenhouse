@@ -25,8 +25,8 @@
         {
             "atomType": "Code",
             "name": "Code",
-            "x": 0.11904761904761904,
-            "y": 0.27298050139275765,
+            "x": 0.07142857142857142,
+            "y": 0.25069637883008355,
             "uniqueID": 1742603411967,
             "ioValues": [
                 {
@@ -49,8 +49,8 @@
         {
             "atomType": "Molecule",
             "name": "Cut Away",
-            "x": 0.27050264550264547,
-            "y": 0.20612813370473537,
+            "x": 0.19047619047619047,
+            "y": 0.2590529247910863,
             "uniqueID": 1742608269895,
             "ioValues": [
                 {
@@ -393,8 +393,8 @@
         {
             "atomType": "Molecule",
             "name": "Bottom Brace",
-            "x": 0.22354497354497355,
-            "y": 0.8022284122562675,
+            "x": 0.12301587301587302,
+            "y": 0.7520891364902507,
             "uniqueID": 1742608506217,
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -417,13 +417,13 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.19576719576719578,
-                    "y": 0.3983286908077995,
+                    "x": 0.20304232804232802,
+                    "y": 0.36211699164345407,
                     "uniqueID": 1742608543961,
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 590
+                            "ioValue": 580
                         },
                         {
                             "name": "y length",
@@ -506,8 +506,8 @@
         {
             "atomType": "Fusion",
             "name": "Fusion",
-            "x": 0.45502645502645506,
-            "y": 0.24512534818941506,
+            "x": 0.3419312169312169,
+            "y": 0.2590529247910863,
             "uniqueID": 1742608640836,
             "ioValues": [
                 {
@@ -525,8 +525,8 @@
         {
             "atomType": "Molecule",
             "name": "Bottom Cut Away",
-            "x": 0.45502645502645506,
-            "y": 0.7688022284122563,
+            "x": 0.28703703703703703,
+            "y": 0.7353760445682451,
             "uniqueID": 1742610114695,
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -638,8 +638,8 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.6752645502645503,
-            "y": 0.46239554317548753,
+            "x": 0.5026455026455027,
+            "y": 0.403899721448468,
             "uniqueID": 1742610142715,
             "ioValues": [
                 {
