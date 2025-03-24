@@ -686,7 +686,7 @@
                     "atomType": "Input",
                     "name": "Geometry",
                     "x": 0.04,
-                    "y": 0.7437325905292479,
+                    "y": 0.7381615598885795,
                     "uniqueID": 1742830622744,
                     "ioValues": [],
                     "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
@@ -796,8 +796,8 @@
                 {
                     "atomType": "Intersection",
                     "name": "Intersection",
-                    "x": 0.38822751322751325,
-                    "y": 0.233983286908078,
+                    "x": 0.41137566137566134,
+                    "y": 0.1532033426183844,
                     "uniqueID": 1742830733854,
                     "ioValues": [
                         {
@@ -819,16 +819,20 @@
                     "uniqueID": 1742830792924,
                     "ioValues": [
                         {
-                            "name": "Shape 1",
-                            "ioValue": 1742830733854
+                            "name": "Shape 4",
+                            "ioValue": 1742850295044
                         },
                         {
-                            "name": "Shape 2",
-                            "ioValue": 1742830932436
+                            "name": "Shape 5",
+                            "ioValue": 1742850300452
                         },
                         {
-                            "name": "Shape 3",
-                            "ioValue": 1742830986506
+                            "name": "Shape 6",
+                            "ioValue": 1742850302612
+                        },
+                        {
+                            "name": "Shape 7",
+                            "ioValue": 1742850317713
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -888,8 +892,8 @@
                 {
                     "atomType": "Intersection",
                     "name": "Intersection",
-                    "x": 0.48611111111111116,
-                    "y": 0.5487465181058496,
+                    "x": 0.47354497354497355,
+                    "y": 0.3147632311977716,
                     "uniqueID": 1742830932436,
                     "ioValues": [
                         {
@@ -932,8 +936,8 @@
                 {
                     "atomType": "Intersection",
                     "name": "Intersection",
-                    "x": 0.5410052910052909,
-                    "y": 0.871866295264624,
+                    "x": 0.5205026455026455,
+                    "y": 0.5543175487465182,
                     "uniqueID": 1742830986506,
                     "ioValues": [
                         {
@@ -946,6 +950,126 @@
                         }
                     ],
                     "description": "The space shared by two shapes."
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.333994708994709,
+                    "y": 0.8941504178272981,
+                    "uniqueID": 1742850115287,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1742830636479
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": -400
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Intersection",
+                    "name": "Intersection",
+                    "x": 0.47619047619047616,
+                    "y": 0.8662952646239555,
+                    "uniqueID": 1742850144506,
+                    "ioValues": [
+                        {
+                            "name": "geometry1",
+                            "ioValue": 1742610142715
+                        },
+                        {
+                            "name": "geometry2",
+                            "ioValue": 1742850115287
+                        }
+                    ],
+                    "description": "The space shared by two shapes."
+                },
+                {
+                    "atomType": "Tag",
+                    "name": "cutLayout,",
+                    "x": 0.6541005291005291,
+                    "y": 0.7409470752089137,
+                    "uniqueID": 1742850295044,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1742850144506
+                        }
+                    ],
+                    "description": "Tags geometry so that it can be extracted later.",
+                    "tags": [
+                        "cutLayout",
+                        ""
+                    ],
+                    "cutTag": true
+                },
+                {
+                    "atomType": "Tag",
+                    "name": ",cutLayout",
+                    "x": 0.6203703703703703,
+                    "y": 0.5877437325905293,
+                    "uniqueID": 1742850300452,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1742830986506
+                        }
+                    ],
+                    "description": "Tags geometry so that it can be extracted later.",
+                    "tags": [
+                        "",
+                        "cutLayout"
+                    ],
+                    "cutTag": true
+                },
+                {
+                    "atomType": "Tag",
+                    "name": ",cutLayout",
+                    "x": 0.5978835978835979,
+                    "y": 0.3203342618384401,
+                    "uniqueID": 1742850302612,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1742830932436
+                        }
+                    ],
+                    "description": "Tags geometry so that it can be extracted later.",
+                    "tags": [
+                        "",
+                        "cutLayout"
+                    ],
+                    "cutTag": true
+                },
+                {
+                    "atomType": "Tag",
+                    "name": ",cutLayout",
+                    "x": 0.6124338624338624,
+                    "y": 0.11977715877437325,
+                    "uniqueID": 1742850317713,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1742830733854
+                        }
+                    ],
+                    "description": "Tags geometry so that it can be extracted later.",
+                    "tags": [
+                        "",
+                        "cutLayout"
+                    ],
+                    "cutTag": true
                 }
             ],
             "allConnectors": [
@@ -971,6 +1095,13 @@
                     "ap2ID": 1742830986506
                 },
                 {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "geometry1",
+                    "ap2Primary": false,
+                    "ap1ID": 1742830622744,
+                    "ap2ID": 1742850144506
+                },
+                {
                     "ap1Name": "Geometry",
                     "ap2Name": "geometry",
                     "ap2Primary": true,
@@ -992,11 +1123,18 @@
                     "ap2ID": 1742830950524
                 },
                 {
+                    "ap1Name": "Geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1742830636479,
+                    "ap2ID": 1742850115287
+                },
+                {
                     "ap1Name": "geometry",
-                    "ap2Name": "Shape 1",
-                    "ap2Primary": false,
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
                     "ap1ID": 1742830733854,
-                    "ap2ID": 1742830792924
+                    "ap2ID": 1742850317713
                 },
                 {
                     "ap1Name": "geometry",
@@ -1021,10 +1159,10 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "Shape 2",
-                    "ap2Primary": false,
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
                     "ap1ID": 1742830932436,
-                    "ap2ID": 1742830792924
+                    "ap2ID": 1742850302612
                 },
                 {
                     "ap1Name": "geometry",
@@ -1035,14 +1173,87 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "Shape 3",
-                    "ap2Primary": false,
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
                     "ap1ID": 1742830986506,
+                    "ap2ID": 1742850300452
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry2",
+                    "ap2Primary": false,
+                    "ap1ID": 1742850115287,
+                    "ap2ID": 1742850144506
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1742850144506,
+                    "ap2ID": 1742850295044
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 4",
+                    "ap2Primary": false,
+                    "ap1ID": 1742850295044,
+                    "ap2ID": 1742830792924
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 5",
+                    "ap2Primary": false,
+                    "ap1ID": 1742850300452,
+                    "ap2ID": 1742830792924
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 6",
+                    "ap2Primary": false,
+                    "ap1ID": 1742850302612,
+                    "ap2ID": 1742830792924
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 7",
+                    "ap2Primary": false,
+                    "ap1ID": 1742850317713,
                     "ap2ID": 1742830792924
                 }
             ],
             "fileTypeVersion": 1,
             "compiledBom": []
+        },
+        {
+            "atomType": "CutLayout",
+            "name": "Cut Layout",
+            "x": 0.8174603174603176,
+            "y": 0.777158774373259,
+            "uniqueID": 1742850380372,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1742830615041
+                },
+                {
+                    "name": "Material Thickness",
+                    "ioValue": 19
+                },
+                {
+                    "name": "Sheet Width",
+                    "ioValue": 2438
+                },
+                {
+                    "name": "Sheet Height",
+                    "ioValue": 1219
+                },
+                {
+                    "name": "Part Padding",
+                    "ioValue": 6
+                }
+            ],
+            "description": "Extracts all parts tagged for cutting and lays them out on a sheet to cut.",
+            "placements": []
         }
     ],
     "allConnectors": [
@@ -1094,6 +1305,13 @@
             "ap2Primary": false,
             "ap1ID": 1742610142715,
             "ap2ID": 1742830615041
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": 1742830615041,
+            "ap2ID": 1742850380372
         }
     ],
     "unitsKey": "MM",
