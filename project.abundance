@@ -2033,7 +2033,7 @@
                 },
                 {
                     "name": "File Type",
-                    "ioValue": "SVG"
+                    "ioValue": "STL"
                 }
             ],
             "description": "Export Atom, let's you choose a type of file to Export.",
