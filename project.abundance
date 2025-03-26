@@ -14,19 +14,14 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1742603280174,
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": 1742850812780
-                }
-            ],
+            "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
             "atomType": "Code",
             "name": "Code",
-            "x": 0.07142857142857142,
-            "y": 0.25069637883008355,
+            "x": 0.11044973544973545,
+            "y": 0.29526462395543174,
             "uniqueID": 1742603411967,
             "ioValues": [
                 {
@@ -49,8 +44,8 @@
         {
             "atomType": "Molecule",
             "name": "Cut Away",
-            "x": 0.19047619047619047,
-            "y": 0.2590529247910863,
+            "x": 0.22751322751322753,
+            "y": 0.33704735376044564,
             "uniqueID": 1742608269895,
             "ioValues": [
                 {
@@ -71,12 +66,7 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1742608269461,
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": 1742608803534
-                        }
-                    ],
+                    "ioValues": [],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -506,8 +496,8 @@
         {
             "atomType": "Fusion",
             "name": "Fusion",
-            "x": 0.3419312169312169,
-            "y": 0.2590529247910863,
+            "x": 0.36706349206349204,
+            "y": 0.36768802228412256,
             "uniqueID": 1742608640836,
             "ioValues": [
                 {
@@ -674,12 +664,7 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1742830615311,
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": 1742830792924
-                        }
-                    ],
+                    "ioValues": [],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -1341,12 +1326,7 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1742850444572,
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": 1742852307837
-                        }
-                    ],
+                    "ioValues": [],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
