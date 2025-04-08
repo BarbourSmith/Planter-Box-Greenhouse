@@ -14,12 +14,7 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1742603280174,
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": 1742850812780
-                }
-            ],
+            "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -638,8 +633,8 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.5026455026455027,
-            "y": 0.403899721448468,
+            "x": 0.4365079365079365,
+            "y": 0.5598885793871866,
             "uniqueID": 1742610142715,
             "ioValues": [
                 {
@@ -656,8 +651,8 @@
         {
             "atomType": "Molecule",
             "name": "Split Apart",
-            "x": 0.6382275132275131,
-            "y": 0.7242339832869081,
+            "x": 0.498015873015873,
+            "y": 0.7520891364902507,
             "uniqueID": 1742830615041,
             "ioValues": [
                 {
@@ -1011,8 +1006,7 @@
                     "tags": [
                         "cutLayout",
                         ""
-                    ],
-                    "cutTag": true
+                    ]
                 },
                 {
                     "atomType": "Tag",
@@ -1030,8 +1024,7 @@
                     "tags": [
                         "",
                         "cutLayout"
-                    ],
-                    "cutTag": true
+                    ]
                 },
                 {
                     "atomType": "Tag",
@@ -1049,8 +1042,7 @@
                     "tags": [
                         "",
                         "cutLayout"
-                    ],
-                    "cutTag": true
+                    ]
                 },
                 {
                     "atomType": "Tag",
@@ -1068,8 +1060,7 @@
                     "tags": [
                         "",
                         "cutLayout"
-                    ],
-                    "cutTag": true
+                    ]
                 }
             ],
             "allConnectors": [
@@ -1227,8 +1218,8 @@
         {
             "atomType": "CutLayout",
             "name": "Cut Layout",
-            "x": 0.8167989417989419,
-            "y": 0.8440111420612814,
+            "x": 0.7645502645502645,
+            "y": 0.796657381615599,
             "uniqueID": 1742850380372,
             "ioValues": [
                 {
@@ -1323,8 +1314,8 @@
         {
             "atomType": "Molecule",
             "name": "Split Apart",
-            "x": 0.6091269841269841,
-            "y": 0.24233983286908078,
+            "x": 0.5013227513227514,
+            "y": 0.21448467966573817,
             "uniqueID": 1742850444474,
             "ioValues": [
                 {
@@ -1511,7 +1502,7 @@
                 },
                 {
                     "atomType": "Tag",
-                    "name": "cutLayout,",
+                    "name": "cutLayout",
                     "x": 0.6541005291005291,
                     "y": 0.7409470752089137,
                     "uniqueID": 1742850444257,
@@ -1523,10 +1514,8 @@
                     ],
                     "description": "Tags geometry so that it can be extracted later.",
                     "tags": [
-                        "cutLayout",
-                        ""
-                    ],
-                    "cutTag": true
+                        "cutLayout"
+                    ]
                 },
                 {
                     "atomType": "Tag",
@@ -1544,8 +1533,7 @@
                     "tags": [
                         "",
                         "cutLayout"
-                    ],
-                    "cutTag": true
+                    ]
                 },
                 {
                     "atomType": "Tag",
@@ -1563,8 +1551,7 @@
                     "tags": [
                         "cutLayout",
                         ""
-                    ],
-                    "cutTag": true
+                    ]
                 },
                 {
                     "atomType": "Tag",
@@ -1582,8 +1569,7 @@
                     "tags": [
                         "",
                         "cutLayout"
-                    ],
-                    "cutTag": true
+                    ]
                 },
                 {
                     "atomType": "Move",
@@ -1971,8 +1957,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.7215608465608465,
-            "y": 0.3259052924791086,
+            "x": 0.6124338624338624,
+            "y": 0.233983286908078,
             "uniqueID": 1742850774420,
             "ioValues": [
                 {
@@ -1997,8 +1983,8 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.7506613756613756,
-            "y": 0.637883008356546,
+            "x": 0.6236772486772487,
+            "y": 0.6128133704735376,
             "uniqueID": 1742850812780,
             "ioValues": [
                 {
@@ -2040,7 +2026,7 @@
             "type": null,
             "resolution": 96,
             "importIndex": 0,
-            "fileName": null
+            "partName": "Planter-Box-Greenhouse"
         }
     ],
     "allConnectors": [
