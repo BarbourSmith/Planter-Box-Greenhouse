@@ -1827,13 +1827,13 @@
                 {
                     "atomType": "Export",
                     "name": "Export",
-                    "x": 0.5972222222222222,
-                    "y": 0.9052924791086352,
+                    "x": 0.611111111111111,
+                    "y": 0.8997214484679666,
                     "uniqueID": 1745185625006,
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": 1742850444870
+                            "ioValue": 1742850444712
                         },
                         {
                             "name": "Resolution (dpi)",
@@ -1845,11 +1845,11 @@
                         },
                         {
                             "name": "File Type",
-                            "ioValue": "SVG"
+                            "ioValue": "STL"
                         }
                     ],
                     "description": "Export Atom, let's you choose a type of file to Export.",
-                    "type": "SVG",
+                    "type": "STL",
                     "resolution": 96,
                     "importIndex": 0,
                     "partName": "Test Part"
@@ -1893,6 +1893,13 @@
                 },
                 {
                     "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1742850444712,
+                    "ap2ID": 1745185625006
+                },
+                {
+                    "ap1Name": "geometry",
                     "ap2Name": "geometry2",
                     "ap2Primary": false,
                     "ap1ID": 1742850444170,
@@ -1932,13 +1939,6 @@
                     "ap2Primary": true,
                     "ap1ID": 1742850444870,
                     "ap2ID": 1742850444257
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": false,
-                    "ap1ID": 1742850444870,
-                    "ap2ID": 1745185625006
                 },
                 {
                     "ap1Name": "geometry",
