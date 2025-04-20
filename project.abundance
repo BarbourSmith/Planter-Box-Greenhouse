@@ -1524,7 +1524,7 @@
                 },
                 {
                     "atomType": "Tag",
-                    "name": ",cutLayout",
+                    "name": "",
                     "x": 0.6203703703703703,
                     "y": 0.5877437325905293,
                     "uniqueID": 1742850444289,
@@ -1536,8 +1536,7 @@
                     ],
                     "description": "Tags geometry so that it can be extracted later.",
                     "tags": [
-                        "",
-                        "cutLayout"
+                        ""
                     ]
                 },
                 {
@@ -1805,6 +1804,36 @@
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+                },
+                {
+                    "atomType": "Export",
+                    "name": "Export",
+                    "x": 0.5972222222222222,
+                    "y": 0.9052924791086352,
+                    "uniqueID": 1745185625006,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1742850444870
+                        },
+                        {
+                            "name": "Resolution (dpi)",
+                            "ioValue": 96
+                        },
+                        {
+                            "name": "Part Name",
+                            "ioValue": "Test Part"
+                        },
+                        {
+                            "name": "File Type",
+                            "ioValue": "SVG"
+                        }
+                    ],
+                    "description": "Export Atom, let's you choose a type of file to Export.",
+                    "type": "SVG",
+                    "resolution": 96,
+                    "importIndex": 0,
+                    "partName": "Test Part"
                 }
             ],
             "allConnectors": [
@@ -1884,6 +1913,13 @@
                     "ap2Primary": true,
                     "ap1ID": 1742850444870,
                     "ap2ID": 1742850444257
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1742850444870,
+                    "ap2ID": 1745185625006
                 },
                 {
                     "ap1Name": "geometry",
