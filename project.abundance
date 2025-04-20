@@ -4,7 +4,12 @@
     "x": 0,
     "y": 0,
     "uniqueID": 1742603270998,
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "Wood Thickness",
+            "ioValue": 11
+        }
+    ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
     "allAtoms": [
@@ -25,26 +30,18 @@
         {
             "atomType": "Code",
             "name": "Code",
-            "x": 0.10383597883597884,
-            "y": 0.24233983286908078,
+            "x": 0.1283068783068783,
+            "y": 0.42061281337047357,
             "uniqueID": 1742603411967,
             "ioValues": [
                 {
-                    "name": "inputShape",
-                    "ioValue": 10
-                },
-                {
-                    "name": "dist",
-                    "ioValue": 10
-                },
-                {
-                    "name": "height",
-                    "ioValue": 10
+                    "name": "thickness",
+                    "ioValue": 11
                 }
             ],
             "description": "Defines a Replicad code block.",
             "codeVersion": 1,
-            "code": " \n      //Inputs:[inputShape, dist, height]\n      //This defines the molecules inputs and creates variables with the same names which can be referenced in the code\n      \n      //Define a circle\n       const circleFunction = (t) => {\n        const baseRadius = 300;\n\n        t = t === 1 ? 0: t\n      \n        const length = Math.PI*2*baseRadius;\n        const period = 69.85;\n        const amplitude = 22.225 / 2;\n        const sinX = t * length; // Scale  to the total length (circumference)\n        const sinY = amplitude * Math.sin((2 * Math.PI * sinX) / period)\n      \n        const angle = 2 * Math.PI * t;\n      \n        console.log(t)\n      \n        const radius = baseRadius + sinY;\n      \n        const circleX = radius * Math.cos(angle);\n        const circleY = radius * Math.sin(angle);\n      \n        const x = circleX ;\n        const y = circleY;\n      \n      \n        return [x, y];\n      };\n\n      // Step 3: Create the sinewave shape\n      const sinewaveShape = drawParametricFunction(circleFunction, { pointsCount: 250 });\n  \n    \n      // Return the combined shape\n      let createdShape =  sinewaveShape.sketchOnPlane().extrude(15);\n\n      //This is the plane we are going to put our new shape on\n      const newPlane = new Plane().pivot(0, 'Y');\n      \n      //For our new geometry we need to define the tags, color, plane, etc\n      let shape2 = {\n          geometry: [createdShape], \n          tags: [\"aTag\"],\n          color: '#A3CE5B',\n          plane: newPlane,\n          bom: []\n      }\n      \n      //Then we can return our created shape in just the same way\n      return shape2\n      \n      \n          /**\n          To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n          If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n          Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n          https://replicad.xyz/docs/introapp/UserGuide.html \n          Return a replicad object that includes geometry, color, tags and plane. \n      \n      \n          Example Code Atom:\n      \n            Inputs:[shape, x];\n      \n            let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n      \n            return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n      \n            - See more examples at _______ \n      \n      \n          */\n      "
+            "code": " \n      //Inputs:[thickness]\n      //This defines the molecules inputs and creates variables with the same names which can be referenced in the code\n      \n      //Define a circle\n       const circleFunction = (t) => {\n        const baseRadius = 300;\n\n        t = t === 1 ? 0: t\n      \n        const length = Math.PI*2*baseRadius;\n        const period = 69.85;\n        const amplitude = 22.225 / 2;\n        const sinX = t * length; // Scale  to the total length (circumference)\n        const sinY = amplitude * Math.sin((2 * Math.PI * sinX) / period)\n      \n        const angle = 2 * Math.PI * t;\n      \n        const radius = baseRadius + sinY;\n      \n        const circleX = radius * Math.cos(angle);\n        const circleY = radius * Math.sin(angle);\n      \n        const x = circleX ;\n        const y = circleY;\n      \n      \n        return [x, y];\n      };\n\n      // Step 3: Create the sinewave shape\n      const sinewaveShape = drawParametricFunction(circleFunction, { pointsCount: 250 });\n  \n    \n      // Return the combined shape\n      let createdShape =  sinewaveShape.sketchOnPlane().extrude(thickness);\n\n      //This is the plane we are going to put our new shape on\n      const newPlane = new Plane().pivot(0, 'Y');\n      \n      //For our new geometry we need to define the tags, color, plane, etc\n      let shape2 = {\n          geometry: [createdShape], \n          tags: [\"aTag\"],\n          color: '#A3CE5B',\n          plane: newPlane,\n          bom: []\n      }\n      \n      //Then we can return our created shape in just the same way\n      return shape2\n      \n      \n          /**\n          To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n          If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n          Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n          https://replicad.xyz/docs/introapp/UserGuide.html \n          Return a replicad object that includes geometry, color, tags and plane. \n      \n      \n          Example Code Atom:\n      \n            Inputs:[shape, x];\n      \n            let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n      \n            return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n      \n            - See more examples at _______ \n      \n      \n          */\n      "
         },
         {
             "atomType": "Molecule",
@@ -393,10 +390,15 @@
         {
             "atomType": "Molecule",
             "name": "Bottom Brace",
-            "x": 0.125,
-            "y": 0.7520891364902507,
+            "x": 0.08333333333333333,
+            "y": 0.8161559888579387,
             "uniqueID": 1742608506217,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "Wood Thickness",
+                    "ioValue": 11
+                }
+            ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
             "topLevel": false,
             "allAtoms": [
@@ -471,10 +473,20 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 15
+                            "ioValue": 11
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Wood Thickness",
+                    "x": 0.04,
+                    "y": 0.6601671309192201,
+                    "uniqueID": 1745185939524,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
                 }
             ],
             "allConnectors": [
@@ -498,6 +510,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1742608631257,
                     "ap2ID": 1742608506469
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "height",
+                    "ap2Primary": false,
+                    "ap1ID": 1745185939524,
+                    "ap2ID": 1742608631257
                 }
             ],
             "fileTypeVersion": 1,
@@ -1319,8 +1338,8 @@
         {
             "atomType": "Molecule",
             "name": "Split Apart",
-            "x": 0.5013227513227514,
-            "y": 0.21448467966573817,
+            "x": 0.5165343915343915,
+            "y": 0.36211699164345407,
             "uniqueID": 1742850444474,
             "ioValues": [
                 {
@@ -1998,8 +2017,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.6124338624338624,
-            "y": 0.233983286908078,
+            "x": 0.5218253968253969,
+            "y": 0.10863509749303622,
             "uniqueID": 1742850774420,
             "ioValues": [
                 {
@@ -2016,7 +2035,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 15
+                    "ioValue": 11
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -2068,6 +2087,16 @@
             "resolution": 96,
             "importIndex": 0,
             "partName": "Planter-Box-Greenhouse"
+        },
+        {
+            "atomType": "Input",
+            "name": "Wood Thickness",
+            "x": 0.04,
+            "y": 0.19220055710306408,
+            "uniqueID": 1745185920806,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
         }
     ],
     "allConnectors": [
@@ -2161,6 +2190,27 @@
             "ap2Primary": false,
             "ap1ID": 1742850812780,
             "ap2ID": 1742603280174
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "thickness",
+            "ap2Primary": false,
+            "ap1ID": 1745185920806,
+            "ap2ID": 1742603411967
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Wood Thickness",
+            "ap2Primary": false,
+            "ap1ID": 1745185920806,
+            "ap2ID": 1742608506217
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "zDist",
+            "ap2Primary": false,
+            "ap1ID": 1745185920806,
+            "ap2ID": 1742850774420
         }
     ],
     "unitsKey": "MM",
