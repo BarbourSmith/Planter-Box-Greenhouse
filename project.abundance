@@ -30,13 +30,13 @@
         {
             "atomType": "Code",
             "name": "Code",
-            "x": 0.1322751322751323,
-            "y": 0.44011142061281333,
+            "x": 0.1541005291005291,
+            "y": 0.5069637883008357,
             "uniqueID": 1742603411967,
             "ioValues": [
                 {
                     "name": "thickness",
-                    "ioValue": 10
+                    "ioValue": 11
                 }
             ],
             "description": "Defines a Replicad code block.",
@@ -675,8 +675,8 @@
         {
             "atomType": "Molecule",
             "name": "Split Apart",
-            "x": 0.498015873015873,
-            "y": 0.7520891364902507,
+            "x": 0.5006613756613757,
+            "y": 0.7576601671309192,
             "uniqueID": 1742830615041,
             "ioValues": [
                 {
@@ -1447,7 +1447,7 @@
                 },
                 {
                     "atomType": "Tag",
-                    "name": "",
+                    "name": "cutLayout",
                     "x": 0.6203703703703703,
                     "y": 0.5877437325905293,
                     "uniqueID": 1742850444289,
@@ -1459,7 +1459,7 @@
                     ],
                     "description": "Tags geometry so that it can be extracted later.",
                     "tags": [
-                        ""
+                        "cutLayout"
                     ]
                 },
                 {
@@ -2045,8 +2045,8 @@
         {
             "atomType": "CutLayout",
             "name": "Cut Layout",
-            "x": 0.8055555555555556,
-            "y": 0.796657381615599,
+            "x": 0.8062169312169312,
+            "y": 0.8133704735376045,
             "uniqueID": 1745186614097,
             "ioValues": [
                 {
@@ -2167,8 +2167,8 @@
         {
             "atomType": "ExtractTag",
             "name": "Extract Tag",
-            "x": 0.7003968253968255,
-            "y": 0.8105849582172702,
+            "x": 0.6937830687830687,
+            "y": 0.8245125348189415,
             "uniqueID": 1745210778948,
             "ioValues": [
                 {
@@ -2275,13 +2275,6 @@
         },
         {
             "ap1Name": "number or geometry",
-            "ap2Name": "thickness",
-            "ap2Primary": false,
-            "ap1ID": 1745185920806,
-            "ap2ID": 1742603411967
-        },
-        {
-            "ap1Name": "number or geometry",
             "ap2Name": "Wood Thickness",
             "ap2Primary": false,
             "ap1ID": 1745185920806,
@@ -2293,6 +2286,13 @@
             "ap2Primary": false,
             "ap1ID": 1745185920806,
             "ap2ID": 1742850774420
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "thickness",
+            "ap2Primary": false,
+            "ap1ID": 1745185920806,
+            "ap2ID": 1742603411967
         },
         {
             "ap1Name": "geometry",
