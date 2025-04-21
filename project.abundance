@@ -36,7 +36,7 @@
             "ioValues": [
                 {
                     "name": "thickness",
-                    "ioValue": 11
+                    "ioValue": 10
                 }
             ],
             "description": "Defines a Replicad code block.",
@@ -1756,7 +1756,7 @@
                     "type": "STL",
                     "resolution": 96,
                     "importIndex": 0,
-                    "partName": "Test Part"
+                    "partName": "Split Apart"
                 }
             ],
             "allConnectors": [
@@ -2045,17 +2045,13 @@
         {
             "atomType": "CutLayout",
             "name": "Cut Layout",
-            "x": 0.7685185185185185,
-            "y": 0.7938718662952646,
+            "x": 0.8055555555555556,
+            "y": 0.796657381615599,
             "uniqueID": 1745186614097,
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": 1742850812780
-                },
-                {
-                    "name": "Material Thickness",
-                    "ioValue": 11
+                    "ioValue": 1745210778948
                 },
                 {
                     "name": "Sheet Width",
@@ -2167,6 +2163,22 @@
             "resolution": 96,
             "importIndex": 0,
             "partName": "Planter-Box-Greenhouse"
+        },
+        {
+            "atomType": "ExtractTag",
+            "name": "Extract Tag",
+            "x": 0.7003968253968255,
+            "y": 0.8105849582172702,
+            "uniqueID": 1745210778948,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1742850812780
+                }
+            ],
+            "description": "Extracts geometry containing the specified tag.",
+            "tag": "cutLayout",
+            "tagIndex": 0
         }
     ],
     "allConnectors": [
@@ -2257,9 +2269,9 @@
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
-            "ap2Primary": false,
+            "ap2Primary": true,
             "ap1ID": 1742850812780,
-            "ap2ID": 1745186614097
+            "ap2ID": 1745210778948
         },
         {
             "ap1Name": "number or geometry",
@@ -2281,13 +2293,6 @@
             "ap2Primary": false,
             "ap1ID": 1745185920806,
             "ap2ID": 1742850774420
-        },
-        {
-            "ap1Name": "number or geometry",
-            "ap2Name": "Material Thickness",
-            "ap2Primary": false,
-            "ap1ID": 1745185920806,
-            "ap2ID": 1745186614097
         },
         {
             "ap1Name": "geometry",
@@ -2316,6 +2321,13 @@
             "ap2Primary": false,
             "ap1ID": 1745186614097,
             "ap2ID": 1745192541051
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": 1745210778948,
+            "ap2ID": 1745186614097
         }
     ],
     "unitsKey": "MM",
