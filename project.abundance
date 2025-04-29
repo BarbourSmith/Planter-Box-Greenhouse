@@ -30,13 +30,13 @@
         {
             "atomType": "Code",
             "name": "Code",
-            "x": 0.1541005291005291,
-            "y": 0.5069637883008357,
+            "x": 0.15343915343915343,
+            "y": 0.5264623955431754,
             "uniqueID": 1742603411967,
             "ioValues": [
                 {
                     "name": "thickness",
-                    "ioValue": 10
+                    "ioValue": 11
                 }
             ],
             "description": "Defines a Replicad code block.",
@@ -2286,13 +2286,6 @@
             "ap2Primary": false,
             "ap1ID": 1745185920806,
             "ap2ID": 1742850774420
-        },
-        {
-            "ap1Name": "number or geometry",
-            "ap2Name": "thickness",
-            "ap2Primary": false,
-            "ap1ID": 1745185920806,
-            "ap2ID": 1742603411967
         },
         {
             "ap1Name": "geometry",
