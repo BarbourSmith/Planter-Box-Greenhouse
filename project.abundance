@@ -2063,7 +2063,7 @@
                 },
                 {
                     "name": "Part Padding",
-                    "ioValue": 10
+                    "ioValue": 20
                 }
             ],
             "description": "Extracts all parts tagged for cutting and lays them out on a sheet to cut.",
