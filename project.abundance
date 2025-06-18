@@ -2274,7 +2274,7 @@
                     "ioValues": [
                         {
                             "name": "geometry1",
-                            "ioValue": "151fe487-991d-478c-bb85-d35f04ea62a7"
+                            "ioValue": "e5d445a6-0a70-4454-9bb2-051ae5f3bb94"
                         },
                         {
                             "name": "geometry2",
@@ -2386,9 +2386,9 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.4642857142857143,
-                    "y": 0.729050279329609,
-                    "uniqueID": "151fe487-991d-478c-bb85-d35f04ea62a7",
+                    "x": 0.503968253968254,
+                    "y": 0.8072625698324022,
+                    "uniqueID": "e5d445a6-0a70-4454-9bb2-051ae5f3bb94",
                     "ioValues": [
                         {
                             "name": "geometry",
@@ -2396,10 +2396,45 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 8
+                            "ioValue": 10
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
+                },
+                {
+                    "atomType": "Gcode",
+                    "name": "Gcode",
+                    "x": 0.7228835978835979,
+                    "y": 0.7318435754189945,
+                    "uniqueID": "1df73e85-e82e-41f9-8c4c-8d23d084041d",
+                    "ioValues": [
+                        {
+                            "name": "Geometry",
+                            "ioValue": "b227a32b-5702-41f4-8a8f-c7405e6cfb27"
+                        },
+                        {
+                            "name": "Tool Size",
+                            "ioValue": 6.35
+                        },
+                        {
+                            "name": "Passes",
+                            "ioValue": 6
+                        },
+                        {
+                            "name": "Speed",
+                            "ioValue": 500
+                        },
+                        {
+                            "name": "Cut Through",
+                            "ioValue": 1
+                        },
+                        {
+                            "name": "Part Name",
+                            "ioValue": "Window"
+                        }
+                    ],
+                    "description": "Generates Maslow gcode from the input geometry.",
+                    "partName": "Window"
                 }
             ],
             "allConnectors": [
@@ -2440,6 +2475,13 @@
                 },
                 {
                     "ap1Name": "geometry",
+                    "ap2Name": "Geometry",
+                    "ap2Primary": false,
+                    "ap1ID": "b227a32b-5702-41f4-8a8f-c7405e6cfb27",
+                    "ap2ID": "1df73e85-e82e-41f9-8c4c-8d23d084041d"
+                },
+                {
+                    "ap1Name": "geometry",
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": "41c08609-6ea2-4517-ab2d-7d3e7d3b36b1",
@@ -2457,13 +2499,13 @@
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": "1bc29b4e-1201-4d0a-a5b8-b706469e1b6d",
-                    "ap2ID": "151fe487-991d-478c-bb85-d35f04ea62a7"
+                    "ap2ID": "e5d445a6-0a70-4454-9bb2-051ae5f3bb94"
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry1",
                     "ap2Primary": false,
-                    "ap1ID": "151fe487-991d-478c-bb85-d35f04ea62a7",
+                    "ap1ID": "e5d445a6-0a70-4454-9bb2-051ae5f3bb94",
                     "ap2ID": "b227a32b-5702-41f4-8a8f-c7405e6cfb27"
                 }
             ],
