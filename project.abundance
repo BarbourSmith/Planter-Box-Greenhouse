@@ -2418,11 +2418,11 @@
                         },
                         {
                             "name": "Passes",
-                            "ioValue": 6
+                            "ioValue": 3
                         },
                         {
                             "name": "Speed",
-                            "ioValue": 500
+                            "ioValue": 1500
                         },
                         {
                             "name": "Cut Through",
