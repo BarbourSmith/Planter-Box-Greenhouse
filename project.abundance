@@ -2426,7 +2426,7 @@
                         },
                         {
                             "name": "Cut Through",
-                            "ioValue": 0.8
+                            "ioValue": 2
                         },
                         {
                             "name": "Part Name",
