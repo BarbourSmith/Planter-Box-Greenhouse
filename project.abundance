@@ -1947,8 +1947,8 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.5654761904761905,
-            "y": 0.5921787709497207,
+            "x": 0.6203703703703703,
+            "y": 0.2569832402234637,
             "uniqueID": 1742850812780,
             "ioValues": [
                 {
@@ -1958,6 +1958,10 @@
                 {
                     "name": "Shape 2",
                     "ioValue": 1742830615041
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": "6cd0f2ce-966e-46da-b7aa-f1c7bc9c16fa"
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -1975,8 +1979,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.6031746031746031,
-            "y": 0.21787709497206706,
+            "x": 0.7089947089947091,
+            "y": 0.2122905027932961,
             "uniqueID": 1745186552165,
             "ioValues": [
                 {
@@ -2001,8 +2005,8 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.716931216931217,
-            "y": 0.38440111420612816,
+            "x": 0.7943121693121694,
+            "y": 0.5391061452513967,
             "uniqueID": 1745186575835,
             "ioValues": [
                 {
@@ -2185,8 +2189,8 @@
         {
             "atomType": "Molecule",
             "name": "Window",
-            "x": 0.25396825396825395,
-            "y": 0.6284916201117319,
+            "x": 0.5324074074074074,
+            "y": 0.9106145251396647,
             "uniqueID": "fe84eadd-dbdc-4a93-a20e-4e269ead51ad",
             "ioValues": [
                 {
@@ -2294,8 +2298,8 @@
                 {
                     "atomType": "Difference",
                     "name": "Difference",
-                    "x": 0.7023809523809524,
-                    "y": 0.29329608938547486,
+                    "x": 0.583994708994709,
+                    "y": 0.30726256983240224,
                     "uniqueID": "b227a32b-5702-41f4-8a8f-c7405e6cfb27",
                     "ioValues": [
                         {
@@ -2312,8 +2316,8 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.7916666666666667,
-                    "y": 0.3435754189944134,
+                    "x": 0.7208994708994708,
+                    "y": 0.2346368715083799,
                     "uniqueID": "41c08609-6ea2-4517-ab2d-7d3e7d3b36b1",
                     "ioValues": [
                         {
@@ -2338,8 +2342,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.2506613756613757,
-                    "y": 0.8715083798882682,
+                    "x": 0.2526455026455027,
+                    "y": 0.8743016759776536,
                     "uniqueID": "ac6450d0-9ff2-4025-8dd0-519092f649cc",
                     "ioValues": [
                         {
@@ -2362,7 +2366,7 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 11
+                            "ioValue": 8
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -2420,7 +2424,7 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 50
+                            "ioValue": 0
                         },
                         {
                             "name": "zDist",
@@ -2441,8 +2445,8 @@
                 {
                     "atomType": "Color",
                     "name": "Color",
-                    "x": 0.9007936507936508,
-                    "y": 0.4860335195530726,
+                    "x": 0.8835978835978836,
+                    "y": 0.4357541899441341,
                     "uniqueID": "31e3def4-5530-487f-974c-d44242e32936",
                     "ioValues": [
                         {
@@ -2528,6 +2532,32 @@
             ],
             "fileTypeVersion": 1,
             "compiledBom": []
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.5853174603174603,
+            "y": 0.6424581005586593,
+            "uniqueID": "6cd0f2ce-966e-46da-b7aa-f1c7bc9c16fa",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "fe84eadd-dbdc-4a93-a20e-4e269ead51ad"
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 50
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 5.5
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
         }
     ],
     "allConnectors": [
@@ -2670,6 +2700,20 @@
             "ap2Primary": false,
             "ap1ID": 1745210778948,
             "ap2ID": 1745186614097
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "fe84eadd-dbdc-4a93-a20e-4e269ead51ad",
+            "ap2ID": "6cd0f2ce-966e-46da-b7aa-f1c7bc9c16fa"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 3",
+            "ap2Primary": false,
+            "ap1ID": "6cd0f2ce-966e-46da-b7aa-f1c7bc9c16fa",
+            "ap2ID": 1742850812780
         }
     ],
     "unitsKey": "MM",
