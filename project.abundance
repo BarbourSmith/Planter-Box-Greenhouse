@@ -2386,8 +2386,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.503968253968254,
-                    "y": 0.8072625698324022,
+                    "x": 0.5072751322751323,
+                    "y": 0.8184357541899442,
                     "uniqueID": "e5d445a6-0a70-4454-9bb2-051ae5f3bb94",
                     "ioValues": [
                         {
@@ -2396,7 +2396,7 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 10
+                            "ioValue": 2.3
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -2404,13 +2404,13 @@
                 {
                     "atomType": "Gcode",
                     "name": "Gcode",
-                    "x": 0.7228835978835979,
-                    "y": 0.7318435754189945,
+                    "x": 0.7929894179894179,
+                    "y": 0.7039106145251396,
                     "uniqueID": "1df73e85-e82e-41f9-8c4c-8d23d084041d",
                     "ioValues": [
                         {
                             "name": "Geometry",
-                            "ioValue": "b227a32b-5702-41f4-8a8f-c7405e6cfb27"
+                            "ioValue": "7061f53f-1f85-4020-9f6b-4568d24a7f6e"
                         },
                         {
                             "name": "Tool Size",
@@ -2418,7 +2418,7 @@
                         },
                         {
                             "name": "Passes",
-                            "ioValue": 3
+                            "ioValue": 2
                         },
                         {
                             "name": "Speed",
@@ -2426,15 +2426,41 @@
                         },
                         {
                             "name": "Cut Through",
-                            "ioValue": 1
+                            "ioValue": 0.8
                         },
                         {
                             "name": "Part Name",
-                            "ioValue": "Window"
+                            "ioValue": "Window-Thin"
                         }
                     ],
                     "description": "Generates Maslow gcode from the input geometry.",
-                    "partName": "Window"
+                    "partName": "Window-Thin"
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.6468253968253969,
+                    "y": 0.7541899441340782,
+                    "uniqueID": "7061f53f-1f85-4020-9f6b-4568d24a7f6e",
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "b227a32b-5702-41f4-8a8f-c7405e6cfb27"
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": -26
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
                 }
             ],
             "allConnectors": [
@@ -2475,10 +2501,10 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "Geometry",
-                    "ap2Primary": false,
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
                     "ap1ID": "b227a32b-5702-41f4-8a8f-c7405e6cfb27",
-                    "ap2ID": "1df73e85-e82e-41f9-8c4c-8d23d084041d"
+                    "ap2ID": "7061f53f-1f85-4020-9f6b-4568d24a7f6e"
                 },
                 {
                     "ap1Name": "geometry",
@@ -2507,6 +2533,13 @@
                     "ap2Primary": false,
                     "ap1ID": "e5d445a6-0a70-4454-9bb2-051ae5f3bb94",
                     "ap2ID": "b227a32b-5702-41f4-8a8f-c7405e6cfb27"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Geometry",
+                    "ap2Primary": false,
+                    "ap1ID": "7061f53f-1f85-4020-9f6b-4568d24a7f6e",
+                    "ap2ID": "1df73e85-e82e-41f9-8c4c-8d23d084041d"
                 }
             ],
             "fileTypeVersion": 1,
