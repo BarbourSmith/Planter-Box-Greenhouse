@@ -2049,8 +2049,8 @@
         {
             "atomType": "CutLayout",
             "name": "Cut Layout",
-            "x": 0.8115079365079366,
-            "y": 0.7715877437325905,
+            "x": 0.8095238095238095,
+            "y": 0.7513966480446927,
             "uniqueID": 1745186614097,
             "ioValues": [
                 {
@@ -2074,101 +2074,71 @@
             "placements": [
                 [
                     {
+                        "id": 3,
+                        "rotate": 330,
                         "translate": {
-                            "x": -158.39999389648438,
-                            "y": 4.099999904632568
-                        },
-                        "id": 9,
-                        "rotate": 0
+                            "x": 198.37784248842024,
+                            "y": 187.78656552957807
+                        }
                     },
                     {
+                        "id": 7,
+                        "rotate": 210,
                         "translate": {
-                            "x": 457.6134870871094,
-                            "y": 4.0999998925231935
-                        },
-                        "id": 8,
-                        "rotate": 0
+                            "x": 359.5656342870436,
+                            "y": 164.47484493358672
+                        }
                     },
                     {
+                        "id": 1,
+                        "rotate": 120,
                         "translate": {
-                            "x": 372.9458082982422,
-                            "y": -203.85726782089844
-                        },
-                        "id": 11,
-                        "rotate": 0
+                            "x": 524.3879902175534,
+                            "y": 156.816875249024
+                        }
                     },
                     {
+                        "id": 0,
+                        "rotate": 180,
                         "translate": {
-                            "x": 439.8787303458985,
-                            "y": -97.43301368339844
-                        },
-                        "id": 15,
-                        "rotate": 0
+                            "x": 680.266445838278,
+                            "y": 183.03228727938918
+                        }
                     },
                     {
+                        "id": 4,
+                        "rotate": 300,
                         "translate": {
-                            "x": 932.7907481183594,
-                            "y": 316.9012911197266
-                        },
-                        "id": 13,
-                        "rotate": 180
+                            "x": 132.08199383278412,
+                            "y": 282.6598153202401
+                        }
                     },
                     {
+                        "id": 5,
+                        "rotate": 30,
                         "translate": {
-                            "x": 503.3134992871094,
-                            "y": 4.245661792523194
-                        },
-                        "id": 14,
-                        "rotate": 0
+                            "x": 867.1378355314372,
+                            "y": 218.0653215711227
+                        }
                     },
                     {
+                        "id": 2,
+                        "rotate": 0,
                         "translate": {
-                            "x": 465.6393517871094,
-                            "y": 300.4051580925232
-                        },
-                        "id": 10,
-                        "rotate": 0
+                            "x": 250.53041834820866,
+                            "y": 267.0295643221522
+                        }
                     },
                     {
+                        "id": 6,
+                        "rotate": 150,
                         "translate": {
-                            "x": 1047.2237925871095,
-                            "y": 29.098245392523193
-                        },
-                        "id": 12,
-                        "rotate": 0
+                            "x": 1010.5911504640928,
+                            "y": 224.4097772855958
+                        }
                     }
                 ]
             ]
-        },
-        {
-            "atomType": "Export",
-            "name": "Export",
-            "x": 0.9146825396825398,
-            "y": 0.7520891364902507,
-            "uniqueID": 1745192541051,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": 1745186614097
-                },
-                {
-                    "name": "Resolution (dpi)",
-                    "ioValue": 96
-                },
-                {
-                    "name": "Part Name",
-                    "ioValue": "Planter-Box-Greenhouse"
-                },
-                {
-                    "name": "File Type",
-                    "ioValue": "STL"
-                }
-            ],
-            "description": "Export Atom, let's you choose a type of file to Export.",
-            "type": "STL",
-            "resolution": 96,
-            "importIndex": 0,
-            "partName": "Planter-Box-Greenhouse"
         },
         {
             "atomType": "ExtractTag",
@@ -2525,6 +2495,41 @@
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Gcode",
+            "name": "Gcode",
+            "x": 0.9067460317460317,
+            "y": 0.7681564245810056,
+            "uniqueID": "861a698c-de44-42b6-823d-537f40acb7a4",
+            "ioValues": [
+                {
+                    "name": "Geometry",
+                    "ioValue": 1745186614097
+                },
+                {
+                    "name": "Tool Size",
+                    "ioValue": 6.35
+                },
+                {
+                    "name": "Passes",
+                    "ioValue": 6
+                },
+                {
+                    "name": "Speed",
+                    "ioValue": 500
+                },
+                {
+                    "name": "Cut Through",
+                    "ioValue": 1
+                },
+                {
+                    "name": "Part Name",
+                    "ioValue": "Planter-Box-Greenhouse"
+                }
+            ],
+            "description": "Generates Maslow gcode from the input geometry.",
+            "partName": "Planter-Box-Greenhouse"
         }
     ],
     "allConnectors": [
@@ -2656,10 +2661,10 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "geometry",
+            "ap2Name": "Geometry",
             "ap2Primary": false,
             "ap1ID": 1745186614097,
-            "ap2ID": 1745192541051
+            "ap2ID": "861a698c-de44-42b6-823d-537f40acb7a4"
         },
         {
             "ap1Name": "geometry",
